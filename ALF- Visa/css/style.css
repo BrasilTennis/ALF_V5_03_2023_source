@@ -1,0 +1,394 @@
+/* CSS Principal html, head, body etc */ 
+@font-face {
+	font-family: "Purista";
+	src: url('../fonts/Purista.otf');
+}
+
+@font-face {
+	font-family: "Purista Light";
+	src: url('../fonts/Purista Light Italic.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  text-align: center;
+  color: #FFF8F8;
+  line-height: 3em;
+}
+
+h1, a , td{
+  height: 100%;
+  font-family: "Purista", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #FFF8F8;
+  line-height: 3em;
+}
+
+h4, h5, h6 {
+  height: 100%;
+  font-family: "Purista Light", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #FFF8F8;
+  line-height: 3em;
+}
+
+
+h1, p {
+  padding: 0 3%;
+  margin: 3% 0;
+  word-wrap: break-word;
+}
+
+img {
+  font-size: 2.7em;
+  opacity:0;
+  -moz-animation: anim 1s linear forwards 1s;
+  -webkit-animation: anim 1s linear forwards 1s;
+  -o-animation: anim 1s linear forwards 1s;
+  -ms-animation: anim 1s linear forwards 1s;
+  animation: anim 1s linear forwards 1s;
+}
+
+h1 {
+  font-size: 2em;
+  letter-spacing: 0.18em;
+  opacity:0;
+  -moz-animation: anim 3s linear forwards 2s;
+  -webkit-animation: anim 3s linear forwards 2s;
+  -o-animation: anim 3s linear forwards 2s;
+  -ms-animation: anim 3s linear forwards 2s;
+  animation: anim 3s linear forwards 2s;
+}
+
+td, tr, table, input, button {
+  opacity:0;
+  -moz-animation: anim 4s linear forwards 2s;
+  -webkit-animation: anim 4s linear forwards 2s;
+  -o-animation: anim 4s linear forwards 2s;
+  -ms-animation: anim 4s linear forwards 2s;
+  animation: anim 4s linear forwards 2s;
+}
+
+h4 {
+  opacity:0;
+  -moz-animation: anim 4s linear forwards 2s;
+  -webkit-animation: anim 4s linear forwards 2s;
+  -o-animation: anim 4s linear forwards 2s;
+  -ms-animation: anim 4s linear forwards 2s;
+  animation: anim 4s linear forwards 2s;
+}
+
+h6 {
+  opacity:0;
+  -moz-animation: anim 4s linear forwards 2s;
+  -webkit-animation: anim 4s linear forwards 2s;
+  -o-animation: anim 4s linear forwards 2s;
+  -ms-animation: anim 4s linear forwards 2s;
+  animation: anim 4s linear forwards 2s;
+}
+
+h5 {
+  opacity:0;
+  -moz-animation: anim 4s linear forwards 2s;
+  -webkit-animation: anim 4s linear forwards 2s;
+  -o-animation: anim 4s linear forwards 2s;
+  -ms-animation: anim 4s linear forwards 2s;
+  animation: anim 4s linear forwards 2s;
+}
+
+p {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+  opacity:0;
+  -moz-animation: anim 3s linear forwards 1s;
+  -webkit-animation: anim 3s linear forwards 1s;
+  -o-animation: anim 3s linear forwards 1s;
+  -ms-animation: anim 3s linear forwards 1s;
+  animation: anim 3s linear forwards 1s;
+}
+
+a {
+  opacity:0;
+  -moz-animation: anim 5s linear forwards 3s;
+  -webkit-animation: anim 5s linear forwards 3s;
+  -o-animation: anim 5s linear forwards 3s;
+  -ms-animation: anim 5s linear forwards 3s;
+  animation: anim 5s linear forwards 3s;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: center;
+    width: 35%;
+}
+
+tr, td {
+    text-align: center;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  h1, p, h4, h5, h6, td, tr, table, input, button {
+    margin: 2% 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1, p, h4, h5, h6, td, tr, table, input, button {
+    margin: 2.5% 0;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  h1, p, h4, h5, h6, td, tr, table, input, button {
+    margin: 3.25% 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1, p, h4, h5, h6, td, tr, table, input, button {
+    margin: 4.5% 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1, p, h4, h5, h6, td, tr, table, input, button {
+    margin: 5.5% 0;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  h1, p, h4, h5, h6, td, tr, table, input, button {
+    margin: 6.5% 0;
+  }
+}
+
+/* Image */
+
+#image {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  overflow: hidden;
+}
+
+#heading_container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Transition pour h1, p et a etc*/
+
+@-moz-keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+@-webkit-keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+@-o-keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+@-ms-keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+@keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+
+/* Boutton CSS + Anim */
+
+.button {
+	display: inline-block;
+	font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	position: relative;
+	padding: .8em 1.4em;
+	padding-right: 1.4em;
+	background: @button-colour;
+	border: none;
+	color: white;
+	transition: .2s;
+  -moz-animation: anim 5s linear forwards 3s;
+  -webkit-animation: anim 5s linear forwards 3s;
+  -o-animation: anim 5s linear forwards 3s;
+  -ms-animation: anim 5s linear forwards 3s;
+  animation: anim 5s linear forwards 3s;
+	&:before,
+	&:after {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		padding-top: inherit;
+		padding-bottom: inherit;
+		width: 2.8em;
+		content: "\00a0";
+		font-family: 'FontAwesome', sans-serif;
+		font-size: 1.2em;
+		text-align: center;
+		
+		transition: .2s;
+		transform-origin: 50% 60%;
+	}
+	&:before {
+		background: @button-tint;
+	}
+	&:hover {
+		background: darken(@button-colour, 10%);
+	}
+	&:active,
+	&:focus {
+		background: darken(@button-colour, 30%);
+		outline: none;
+	}
+	&:hover {
+		background: greenen(@button-colour, 10%);
+	}
+	&:active,
+	&:focus {
+		background: greenen(@button-colour, 30%);
+		outline: none;
+	}
+  
+}
+
+.button {
+	min-width: 12em;
+}
+
+.non {
+	background: #FE5F55;
+	&:hover {
+		background: darken(#FE5F55, 10%);
+	}
+	&:active,
+	&:focus {
+		background: darken(#FE5F55, 30%);
+	}
+	&:after {
+		content: "\F054";
+	}
+	&:hover:after {
+		-webkit-animation: bounceright .3s alternate ease infinite;
+		animation: bounceright .3s alternate ease infinite;
+	}
+}
+
+.yes {
+	background: #2CAB18;
+	&:hover {
+		background: greenen(#2CAB18, 10%);
+	}
+	&:active,
+	&:focus {
+		background: greenen(#2CAB18, 30%);
+	}
+	&:after {
+		content: "\F054";
+	}
+	&:hover:after {
+		-webkit-animation: bounceright .3s alternate ease infinite;
+		animation: bounceright .3s alternate ease infinite;
+	}
+}
+
+.logout {
+	background: #ab1818;
+  font-size: 0.8em;
+	&:hover {
+		background: greenen(#ab1818, 10%);
+	}
+	&:active,
+	&:focus {
+		background: greenen(#ab1818, 30%);
+	}
+	&:after {
+		content: "\F054";
+	}
+	&:hover:after {
+		-webkit-animation: bounceright .3s alternate ease infinite;
+		animation: bounceright .3s alternate ease infinite;
+	}
+}
+
+@-webkit-keyframes bounceright {
+	from { -webkit-transform: translateX(0); }
+	to   { -webkit-transform: translateX(3px); }
+}
+
+@-webkit-keyframes wiggle {
+	from { -webkit-transform: rotate(0deg); }
+	to   { -webkit-transform: rotate(30deg); }
+}
+
+@keyframes bounceright {
+	from { transform: translateX(0); }
+	to   { transform: translateX(3px); }
+}
+
+@keyframes wiggle {
+	from { transform: rotate(0deg); }
+	to   { transform: rotate(30deg); }
+}
+
+/* Input Nom pour BDD */
+
+/* form starting stylings */
+/* form starting stylings ------------------------------- */
+
+input 				{
+  font-size:15px;
+  padding:7px 7px 7px 3px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+.form__input {
+  font-family: 'Purista';
+  color: #333;
+  font-size: 15px;
+	margin: 0 auto;
+  padding: 7px 7px 7px 3px;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 300px;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
