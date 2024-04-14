@@ -1,0 +1,8 @@
+<dayzrp>
+  <servers>
+    <!--<server name='RP1 : S1' host='81.170.227.227' port='2302'/>-->
+  </servers>
+  <patch data="@ALF" launcherUrl="" launcherVersion="0.0.2.6" mode="lzma">
+    <file path="addons/alf_access.pbo" hash="d58c1ca065325e1923bcd85c201cee99" url="/addons/alf_access.pbo.lzma" />
+  </patch>
+</dayzrp>
